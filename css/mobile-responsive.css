@@ -1,0 +1,162 @@
+/* Mobile Responsive Styles for Kaching Bundles - Preserves Original Styling */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .kaching-bundles {
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .kaching-bundles__block {
+    --bundle-bars-per-row: 1 !important;
+  }
+
+  .kaching-bundles__bars {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .kaching-bundles__bar {
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .kaching-bundles__bar:active {
+    transform: scale(0.98);
+  }
+
+  .kaching-bundles__bar-container {
+    display: block;
+    width: 100%;
+  }
+
+  .kaching-bundles__bar-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .kaching-bundles__bar-content-left {
+    width: 60%;
+    flex-shrink: 1;
+  }
+
+  .kaching-bundles__bar-first-line {
+    margin-bottom: 4px;
+  }
+
+  .kaching-bundles__bar-title {
+    word-break: break-word;
+    display: block;
+  }
+
+  .kaching-bundles__bar-second-line {
+    margin-bottom: 0;
+  }
+
+  .kaching-bundles__bar-pricing {
+    text-align: right;
+    width: 35%;
+    flex-shrink: 0;
+  }
+
+  .kaching-bundles__bar-price {
+    display: block;
+  }
+
+  .kaching-bundles__bar-full-price {
+    display: block;
+    font-size: 12px;
+  }
+
+  .kaching-bundles__bar-most-popular {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: auto !important;
+    margin-bottom: 8px;
+  }
+
+  /* Free Gifts Section */
+  .kaching-bundles__free-gift {
+    width: 100%;
+    display: block;
+    padding: 12px;
+    margin: 6px 0;
+  }
+
+  .kaching-bundles__free-gift__main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .kaching-bundles__free-gift__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .kaching-bundles__free-gift__image {
+    display: block;
+  }
+
+  .kaching-bundles__free-gift__content {
+    flex: 1;
+  }
+
+  .kaching-bundles__free-gift__text {
+    word-break: break-word;
+    display: block;
+  }
+
+  .kaching-bundles__free-gift__divider {
+    display: none !important;
+  }
+}
+
+/* Mobile (480px and below) - PRESERVES ALL ORIGINAL STYLES */
+@media screen and (max-width: 480px) {
+  .kaching-bundles {
+    width: 100%;
+    padding: 0 4px;
+  }
+
+  .kaching-bundles__bars {
+    gap: 12px;
+  }
+
+  .kaching-bundles__bar-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .kaching-bundles__bar-content-left {
+    width: 65%;
+  }
+
+  .kaching-bundles__bar-pricing {
+    width: 30%;
+    text-align: right;
+  }
+
+  .kaching-bundles__free-gift {
+    padding: 10px;
+  }
+
+  .kaching-bundles__free-gift__main {
+    gap: 8px;
+  }
+
+  .kaching-bundles__free-gift__text {
+    font-size: 11px;
+  }
+}
+
